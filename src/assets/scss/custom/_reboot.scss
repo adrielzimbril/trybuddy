@@ -1,0 +1,63 @@
+//
+// reboot.scss
+//
+html {
+  @apply relative scroll-smooth;
+}
+
+*, ::after, ::before {
+  @apply box-border
+}
+
+body {
+  @apply min-h-screen font-body text-base dark:text-white dark:bg-black font-medium leading-[1.66] text-pretty align-middle overflow-x-hidden text-colorCodGray;
+}
+
+// Fix event bubbling on iOS devices
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    cursor: pointer;
+  }
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold;
+}
+
+
+h1 {
+  @apply text-[45px];
+}
+
+h2 {
+  @apply text-[36px];
+}
+
+h3 {
+  @apply text-[30px];
+}
+
+h4 {
+  @apply text-[24px];
+}
+
+h5 {
+  @apply text-[20px];
+}
+
+h6 {
+  @apply text-[16px];
+}
+
+
+p {
+  @apply leading-relaxed;
+}

@@ -1,0 +1,128 @@
+const colors = require("tailwindcss/colors");
+const plugin = require("tailwindcss/plugin");
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,js}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+  ],
+  mode: "jit",
+  darkMode: "class",
+  important: true,
+  theme: {
+    screens: {
+      DEFAULT: "390px",
+      xs: "540px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1540px",
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "1rem",
+        md: "1rem",
+        lg: "1rem",
+        xl: "3em",
+        "2xl": "4rem",
+      },
+    },
+    fontFamily: {
+      body: [
+        "HarmonyOS Sans",
+        "Golos Text",
+        "Inter",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
+    },
+    borderRadius: {
+      none: "0",
+      DEFAULT: ".675rem",
+      sm: ".25rem",
+      md: ".375rem",
+      lg: ".5rem",
+      full: "9999px",
+      xl: ".925rem",
+    },
+    extend: {
+      colors: {
+        primary: "#794AFF",
+        secondary: "#A55FFF",
+        accent: "#6005BC",
+        colorCodGray: "#0A0A0A",
+        green: "#4AFF58",
+        yellow: "#A0FF4A",
+        transparent: "transparent",
+        current: "currentColor",
+        white: "#FFFFFF",
+        light: "#F5F8FA",
+        dark: "#0E1117",
+        darkSub: "#0E1116",
+        darkAccent: "#ADADAD4F",
+        black: "#0E1116",
+        slate: {
+          base: "#5A5D79",
+          50: "#F4F4F6",
+          100: "#E7E8EC",
+          200: "#C4C5CF",
+          300: "#A1A2B3",
+          400: "#7D7F96",
+          500: "#5A5D79",
+          600: "#363A5D",
+          700: "#131740",
+          800: "#101436",
+          900: "#0D102D",
+        },
+      },
+      boxShadow: {
+        sm: "0 2px 4px 0 rgb(60 72 88 / 0.25)",
+        DEFAULT: "0 0 3px rgb(60 72 88 / 0.25)",
+        md: "0 5px 13px rgb(60 72 88 / 0.20)",
+        lg: "0 10px 25px -3px rgb(60 72 88 / 0.15)",
+        xl: "0 20px 25px -5px rgb(60 72 88 / 0.1), 0 8px 10px -6px rgb(60 72 88 / 0.1)",
+        "2xl": "0 25px 50px -12px rgb(60 72 88 / 0.25)",
+        inner: "inset 0 2px 4px 0 rgb(60 72 88 / 0.05)",
+        darkIn: "0px -20px 80px 0px rgba(0, 0, 0, 0.65)",
+        darkOut: "-2px 3px 90px -20px rgb(0 0 0 / 25%)",
+      },
+      spacing: {
+        0.75: "0.1875rem",
+        3.25: "0.8125rem",
+      },
+      maxWidth: ({ theme, breakpoints }) => ({
+        1200: "71.25rem",
+        992: "60rem",
+        768: "45rem",
+      }),
+      zIndex: {
+        1: "1",
+        2: "2",
+        3: "3",
+        999: "999",
+      },
+    },
+  },
+  plugins: [
+    require("@tailwindcss/forms")({
+      strategy: "class", // only generate classes
+    }),
+    require("@kamona/tailwindcss-perspective"),
+    require("@tailwindcss/typography"),
+  ],
+};

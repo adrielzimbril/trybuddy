@@ -1,0 +1,451 @@
+@@include("partials/main.html")
+<head>
+	@@include("partials/title-meta.html", {"title": "TryBuddy"})
+
+	@@include("partials/head-css.html")
+</head>
+
+@@include("partials/body.html")
+
+<section
+		class="redo-section relative bg-white dark:bg-darkSub table w-full lg:pt-14 lg:pb-14 pt-6 pb-14 overflow-hidden">
+	<div class="relative z-1" id="hero_ctn">
+		<div class="relative grid rid-cols-1 items-center">
+			<div class="lg:me-6s text-center max-w-4xl mx-auto">
+                    <span class="text-sm btn-hover-txt-liquid-y bg-darkAccent/8 dark:bg-colorCodGray/10 border border-darkSub/10 dark:border-white/20 rounded py-2 px-4"
+						  data-delay-options='{"elements":  ".lqd-chars", "delayType":  "animation", "startDelay":  0, "delayBetween":  32.5}'
+						  data-split-options='{"type":  "chars, words"}'
+						  data-split-text="true" data-transition-delay="true">
+                            👋 Hey there! I'm Buddy Sensei
+                        </span>
+
+				<h1 class="hidden">Découvre ton assistant scolaire boosté par AI 👨‍🏫✨</h1>
+
+				<h2 class="leading-normal font-semibold text-5xl/tight lg:text-7xl/tight mt-6"
+					data-text-rotator="true">
+					Découvre ton assistant
+					<br>
+					<span class="relative txt-rotate-keywords transition-[width] duration-100">
+										<span class="txt-rotate-keyword active">
+                                            <span
+													class="relative text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-primary to-secondary transform">Scolaire</span> 👨‍🏫
+                                        </span>
+										<span class="txt-rotate-keyword">
+                                            <span
+													class="relative text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-primary to-secondary transform">Universitaire</span> 🤖
+                                        </span>
+										<span class="txt-rotate-keyword">
+                                            <span
+													class="relative text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-primary to-secondary transform">Éducatif</span> 🏫
+                                        </span>
+										<span class="txt-rotate-keyword">
+                                            <span
+													class="relative text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-primary to-secondary transform">Académique</span> 😍
+                                        </span>
+									</span>
+				</h2>
+
+				<p
+						class="text-slate-600 dark:text-white/80 text-xl mt-12 leading-relaxed mx-auto slg:mx-0">
+					📚🎉 Tout comme demander un coup de main à ton pote de classe préféré, tu peux maintenant obtenir l'aide d'un super bot intelligent sur une tonne de matières scolaires ! Des maths à l'histoire en passant par la littérature, Buddy Sensei est là pour toi. Envoie-lui un message et découvre instantanément des conseils sensationnels et bien plus encore ! 🤖
+				</p>
+
+				<div class="grid md:flex gap-4 justify-center items-center mx-auto mt-6">
+					<a
+							class="py-3 px-8 inline-block rounded-full tracking-wide border align-middle duration-300 text-base text-center bg-primary border-primary text-white"
+					   href="https://t.me/usebuddybot" target="_blank">
+						Telegram 🧑‍🎓
+					</a>
+					<a
+							class="py-3 px-8 inline-block rounded-full tracking-wide border align-middle duration-300 text-base text-center bg-green border-green stext-white"
+					   href="https://wa.me/+2250702650440" target="_blank">
+						Whatsapp 🧑‍🎓
+					</a>
+				</div>
+			</div>
+
+			<div class="relative rounded-xl w-4/5 overflow-hidden mx-auto mt-8 z-3">
+				<img alt="" class="mover" src="assets/images/bento-grid.png">
+			</div>
+
+			<span
+					class="pointer-events-none relative after:content-[''] after:absolute lg:after:-top-96 after:-top-10 after:-right-32 after:w-[36rem] after:h-[36rem] after:border-2 after:border-dashed after:border-slate-700/10 dark:after:border-slate-200/10 after:rounded-full after:-z-1 before:content-[''] before:absolute lg:before:-top-[30rem] before:-top-36 before:-right-56 before:w-[48rem] before:h-[48rem] before:border-2 before:border-dashed before:border-slate-700/10 dark:before:border-slate-200/10 before:rounded-full before:-z-1">
+
+			</span>
+
+			<span
+					class="pointer-events-none absolute blur-3xl w-80 h-80 rounded-full top-0 -start-10 bg-gradient-to-tl to-primary/30 from-secondary/60 z-0 hidden"></span>
+			<span
+					class="pointer-events-none absolute blur-3xl w-96 h-96 rounded-full top-0s -bottom-10 -end-10 bg-gradient-to-tr to-primary/20 from-secondary/60 z-0"></span>
+		</div>
+	</div>
+</section>
+
+<section class="relative pt-6 md:pb-24 pb-16">
+	<span class="pointer-events-none absolute blur-[200px] w-[500px] h-[500px] rounded-full top-[20%] -start-[20%] bg-gradient-to-tl to-primary/25 from-secondary/60 -z-1"></span>
+	<span class="pointer-events-none absolute blur-[200px] w-[500px] h-[500px] rounded-full top-[40%] -end-[20%] bg-gradient-to-tl to-primary/25 from-secondary/60 -z-1"></span>
+	<span class="pointer-events-none absolute blur-[200px] w-[500px] h-[500px] rounded-full bottom-[40%] -start-[20%] bg-gradient-to-tl to-primary/25 from-secondary/60 -z-1"></span>
+	<span class="pointer-events-none absolute blur-[200px] w-[500px] h-[500px] rounded-full bottom-[20%] -end-[20%] bg-gradient-to-tl to-primary/25 from-secondary/60 -z-1"></span>
+
+	<div class="redo-section relative md:mt-24 mt-16">
+		<div class="relative text-5xl lg:text-8xl leading-1 dark:text-white">
+			<div class="p-0">
+				<div class="overflow-hidden">
+					<div class="carousel-container relative">
+						<div class="carousel-items relative -mr-30 -ml-30"
+							 data-lqd-flickity='{"marquee": true, "percentPosition": false, "columnsAutoWidth": true, "pauseAutoPlayOnHover": false}'>
+							<div class="flickity-viewport relative w-full overflow-hidden">
+								<div class="flickity-slider flex w-full h-full relative items-start left-0">
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1">
+												<span class="whitespace-nowrap">Learn with AI 🧑‍🎓</span>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1">
+												<span class="whitespace-nowrap">Chat with AI 🤖</span>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1">
+												<span class="whitespace-nowrap">Learn with AI 🧑‍🎓</span>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1">
+												<span class="whitespace-nowrap">Chat with AI 🤖</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p-0 pt-6">
+				<div class="overflow-hidden">
+					<div class="carousel-container relative mb-6">
+						<div class="carousel-items relative -mr-30 -ml-30"
+							 data-lqd-flickity='{"marquee": true, "percentPosition": false, "columnsAutoWidth": true, "marqueeTickerSpeed": "1", "rightToLeft": true, "pauseAutoPlayOnHover": false}'>
+							<div class="flickity-viewport relative w-full overflow-hidden">
+								<div class="flickity-slider flex w-full h-full relative items-start right-0">
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1">
+												<span class="whitespace-nowrap">Chat with AI 🤖</span>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1">
+												<span class="whitespace-nowrap">Learn with AI 🧑‍🎓</span>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1">
+												<span class="whitespace-nowrap">Chat with AI 🤖</span>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1">
+												<span class="whitespace-nowrap">Learn with AI 🧑‍🎓</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="redo-section relative md:mt-24 mt-16 md:mb-40 mb-20">
+		<div class="relative">
+			<div class="grid gap-16 text-4xl lg:text-8xl leading-1 font-bold">
+				<div class="p-0" data-parallax="true"
+					 data-parallax-from='{"y": "20px", "opacity" : 0.8}'
+					 data-parallax-options='{"ease" :"linear", "start": "top bottom", "end": "bottom+=0px top"}'
+					 data-parallax-to='{"y": "0px", "opacity" : 1}'>
+					<div class="relative">
+                        <span class="mt-0 mb-0" data-parallax="true"
+							  data-parallax-from='{"opacity" : 0.2}'
+							  data-parallax-options='{"parallaxTargets": ".lqd-chars, figure", "start": "top 70%", "end": "bottom bottom", "scrub" : 3}'
+							  data-parallax-to='{"opacity" : 1, "stagger": {"from": "start", "each" : 1}}'
+							  data-split-options='{"type": "words, chars"}'
+							  data-split-text="true">
+							📚🔍 Boostez votre productivité avec les conseils d'étude basés sur l'IA de Buddy Sensei. Réalisez vos tâches efficacement !
+                        </span>
+					</div>
+				</div>
+				<div class="p-0" data-parallax="true"
+					 data-parallax-from='{"y": "120px", "opacity" : 0.8}'
+					 data-parallax-options='{"ease" :"linear", "start": "top bottom", "end": "bottom+=0px top"}'
+					 data-parallax-to='{"y": "0px", "opacity" : 1}'>
+					<div class="relative">
+                        <span class="mt-0 mb-0" data-parallax="true"
+							  data-parallax-from='{"opacity" : 0.2}'
+							  data-parallax-options='{"parallaxTargets": ".lqd-chars, figure", "start": "top 70%", "end": "bottom bottom", "scrub" : 3}'
+							  data-parallax-to='{"opacity" : 1, "stagger": {"from": "start", "each" : 1}}'
+							  data-split-options='{"type": "words, chars"}'
+							  data-split-text="true">
+							🌐🎓 Apprenez une nouvelle langue sans effort avec les leçons interactives de Buddy Sensei.
+                        </span>
+					</div>
+				</div>
+				<div class="p-0" data-parallax="true"
+					 data-parallax-from='{"y": "200px", "opacity" : 0.8}'
+					 data-parallax-options='{"ease" :"linear", "start": "top bottom", "end": "bottom+=0px top"}'
+					 data-parallax-to='{"y": "0px", "opacity" : 1}'>
+					<div class="relative">
+                        <span class="mt-0 mb-0" data-parallax="true"
+							  data-parallax-from='{"opacity" : 0.2}'
+							  data-parallax-options='{"parallaxTargets": ".lqd-chars, figure", "start": "top 70%", "end": "bottom bottom", "scrub" : 3}'
+							  data-parallax-to='{"opacity" : 1, "stagger": {"from": "start", "each" : 1}}'
+							  data-split-options='{"type": "words, chars"}'
+							  data-split-text="true">
+							🧠🌍 Élevez vos connaissances avec des faits amusants de Buddy Sensei. Impressionnez vos
+							amis avec des informations fascinantes et bien plus encore !
+                        </span>
+					</div>
+				</div>
+				<div class="p-0" data-parallax="true"
+					 data-parallax-from='{"y": "240px", "opacity" : 0.8}'
+					 data-parallax-options='{"ease" :"linear", "start": "top bottom", "end": "bottom+=0px top"}'
+					 data-parallax-to='{"y": "0px", "opacity" : 1}'>
+					<div class="relative">
+                        <span class="mt-0 mb-0" data-parallax="true"
+							  data-parallax-from='{"opacity" : 0.2}'
+							  data-parallax-options='{"parallaxTargets": ".lqd-chars, figure", "start": "top 70%", "end": "bottom bottom", "scrub" : 3}'
+							  data-parallax-to='{"opacity" : 1, "stagger": {"from": "start", "each" : 1}}'
+							  data-split-options='{"type": "words, chars"}'
+							  data-split-text="true">
+							✍️ Alors, comment fonctionne votre Buddy AI Sensei ?
+                        </span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="redo-section relative md:mt-24 mt-16">
+		<div class="coverUp relative overflow-hidden md:mt-24 mt-16">
+			<div class="slide relative p-0">
+				<div class="md:mt-24s mt-16 bg-white dark:bg-darkSub rounded-xl border border-darkAccent/20 dark:border-darkAccent shadow px-8 py-16">
+					<div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+						<div class="relative order-1 md:order-2">
+							<div class="relative overflow-hidden rounded-xl pt-6 lg:ms-8">
+								<img alt="" class="rounded-xl m-auto h-[540px] max-h-[540px]"
+									 src="assets/images/features/chat-math.png">
+							</div>
+						</div>
+
+						<div class="text-center order-2 md:order-1 max-w-md mx-auto">
+							<span class="text-white font-semibold bg-gradient-to-b from-primary to-secondary border border-secondary rounded p-3">01</span>
+
+							<h4 class="md:text-4xl md:leading-normal text-2xl leading-normal font-semibold mt-8 mb-4">
+								Des conversations textuelles qui suscitent la joie 💬✨
+							</h4>
+							<p class="text-slate-600 dark:text-white/70 font-semibold text-medium">
+								Fatigué des discussions ennuyeuses ?
+								Buddy Sensei ajoute une touche de plaisir à vos conversations.
+								Dire au revoir au même vieux, et bonjour à un tout nouveau niveau de plaisanteries!
+								🎉🎈
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide relative p-0">
+				<div class="md:mt-24s mt-16 bg-white dark:bg-darkSub rounded-xl border border-darkAccent/20 dark:border-darkAccent shadow px-8 py-16">
+					<div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+						<div class="relative order-1 md:order-2">
+							<div class="relative overflow-hidden rounded-xl pt-6 lg:ms-8">
+								<img alt="" class="rounded-xl m-auto h-[540px] max-h-[540px]"
+									 src="assets/images/features/chat-image-generate.png">
+							</div>
+						</div>
+
+						<div class="text-center order-2 md:order-1 max-w-md mx-auto">
+							<span class="text-white font-semibold bg-gradient-to-b from-primary to-secondary border border-secondary rounded p-3">02</span>
+
+							<h4 class="md:text-4xl md:leading-normal text-2xl leading-normal font-semibold mt-8 mb-4">
+								Créez facilement des images éblouissantes 🎨🚀
+							</h4>
+							<p class="text-slate-600 dark:text-white/70 font-semibold text-medium">
+								Vous avez toujours rêvé de transformer des idées en visuels ?
+								Buddy Sensei est votre compagnon artistique !
+								Juste, tapez <code>/create</code> et soyez témoin de la magie – mèmes, griffonnages et
+								images géniales
+								à votre disposition.
+								Libérez l'artiste qui sommeille en vous !
+								🖌️✨
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide relative p-0">
+				<div class="md:mt-24s mt-16 bg-white dark:bg-darkSub rounded-xl border border-darkAccent/20 dark:border-darkAccent shadow px-8 py-16">
+					<div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+						<div class="relative order-1 md:order-2">
+							<div class="relative overflow-hidden rounded-xl pt-6 lg:ms-8">
+								<img alt="" class="rounded-xl m-auto h-[540px] max-h-[540px]"
+									 src="assets/images/features/chat-voice-note.png">
+							</div>
+						</div>
+
+						<div class="text-center order-2 md:order-1 max-w-md mx-auto">
+							<span class="text-white font-semibold bg-gradient-to-b from-primary to-secondary border border-secondary rounded p-3">03</span>
+
+							<h4 class="md:text-4xl md:leading-normal text-2xl leading-normal font-semibold mt-8 mb-4">
+								Notes vocales : exprimez ce que vous pensez ! 🎤😎
+							</h4>
+							<p class="text-slate-600 dark:text-white/70 font-semibold text-medium">
+								Qui a besoin de taper ? Buddy Sensei comprend : envoyez des notes vocales et profitez
+								des bons moments.
+								C'est comme discuter avec votre meilleur ami, mais avec une touche cool. Votre voix, votre ambiance ! 🗣️🎶
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide relative p-0">
+				<div class="md:mt-24s mt-16 bg-white dark:bg-darkSub rounded-xl border border-darkAccent/20 dark:border-darkAccent shadow px-8 py-16">
+					<div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+						<div class="relative order-1 md:order-2">
+							<div class="relative overflow-hidden rounded-xl pt-6 lg:ms-8">
+								<img alt="" class="rounded-xl m-auto h-[540px] max-h-[540px]"
+									 src="assets/images/features/chat-vision.png">
+							</div>
+						</div>
+
+						<div class="text-center order-2 md:order-1 max-w-md mx-auto">
+							<span class="text-white font-semibold bg-gradient-to-b from-primary to-secondary border border-secondary rounded p-3">04</span>
+
+							<h4 class="md:text-4xl md:leading-normal text-2xl leading-normal font-semibold mt-8 mb-4">
+								Maîtrise de l'Analyse d'Images : 🕵️‍♂️🔍
+							</h4>
+							<p class="text-slate-600 dark:text-white/70 font-semibold text-medium">
+								Curieux à propos d'une image ?
+								Partagez-la avec Buddy Sensei !
+								Il décodera les memes, les selfies ou même messages secrets.
+								Aucun casse-tête d'image n'est trop délicat pour les yeux perçants de Buddy Sensei ! 👀🧩
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide relative p-0">
+				<div class="md:mt-24s mt-16 bg-white dark:bg-darkSub rounded-xl border border-darkAccent/20 dark:border-darkAccent shadow px-8 py-16">
+					<div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+						<div class="relative order-1 md:order-2">
+							<div class="relative overflow-hidden rounded-xl pt-6 lg:ms-8">
+								<img alt="" class="rounded-xl m-auto h-[540px] max-h-[540px]"
+									 src="assets/images/features/chat-learn-japanese.png">
+							</div>
+						</div>
+
+						<div class="text-center order-2 md:order-1 max-w-md mx-auto">
+							<span class="text-white font-semibold bg-gradient-to-b from-primary to-secondary border border-secondary rounded p-3">05</span>
+
+							<h4 class="md:text-4xl md:leading-normal text-2xl leading-normal font-semibold mt-8 mb-4">
+								Apprendre de nouvelles langues : 📚🤔
+							</h4>
+							<p class="text-slate-600 dark:text-white/70 font-semibold text-medium">
+							Vous voulez apprendre une nouvelle langue ?
+							Les cours de langue interactifs de Buddy Sensei en font un jeu d'enfant. Des phrases de
+							base aux compétences conversationnelles, embarquez pour un voyage linguistique ! 🌐🎓
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide relative p-0 ">
+				<div class="md:mt-24s mt-16 bg-white dark:bg-darkSub rounded-xl border border-darkAccent/20 dark:border-darkAccent shadow px-8 py-16">
+					<div class="grid md:grid-cols-2 grid-cols-1 items-center gap-6">
+						<div class="relative order-1 md:order-2">
+							<div class="relative overflow-hidden rounded-xl pt-6 lg:ms-8">
+								<img alt="" class="rounded-xl m-auto h-[540px] max-h-[540px]"
+									 src="assets/images/features/chat-history.png">
+							</div>
+						</div>
+
+						<div class="text-center order-2 md:order-1 max-w-md mx-auto">
+							<span class="text-white font-semibold bg-gradient-to-b from-primary to-secondary border border-secondary rounded p-3">06</span>
+
+							<h4 class="md:text-4xl md:leading-normal text-2xl leading-normal font-semibold mt-8 mb-4">
+								Informations pédagogiques grâce à l'IA 📖🧠
+							</h4>
+							<p class="text-slate-600 dark:text-white/70 font-semibold text-medium">
+								L'IA de Buddy Sensei non seulement divertit, mais éclaire également. Recevez des
+								informations pédagogiques et des informations précieuses sans effort, faisant de
+								chaque interaction une expérience d'apprentissage ! 🤖🎓
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="redo-section relative md:mt-24 mt-16">
+		<div class="relative text-4xl lg:text-8xl leading-1">
+			<div class="p-0">
+				<div class="mt-50 overflow-hidden">
+					<div class="carousel-container relative carousel-nav-shaped">
+						<div class="carousel-items relative -mr-30 -ml-30"
+							 data-lqd-flickity='{"marquee": true, "percentPosition": false, "columnsAutoWidth": true}'>
+							<div class="flickity-viewport relative w-full overflow-hidden">
+								<div class="flickity-slider flex w-full h-full relative items-start left-0">
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1 dark:text-white">
+												<span class="whitespace-nowrap">Learn with Buddy Sensei 🤩</span>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1 dark:text-white">
+												<span class="whitespace-nowrap">Learn with Buddy Sensei 🤩</span>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item flex flex-col justify-center">
+										<div class="carousel-item-inner relative w-full">
+											<div class="carousel-item-content relative w-full font-bold leading-1 dark:text-white">
+												<span class="whitespace-nowrap">Learn with Buddy Sensei 🤩</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include("partials/body-end.html")

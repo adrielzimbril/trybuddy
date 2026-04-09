@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// FONTS
+@import "custom/fonts";
+
+// general
+@import "custom/reboot";
+@import "custom/general";
+
+// Liquid Animation
+@import "custom/liquid";
+
+// Partials Elements
+@import "custom/partials";
+
+// structure
+@import "custom/structure/topnav";
+
+// pages
+@import "custom/pages/helper";
+@import "custom/pages/contact";

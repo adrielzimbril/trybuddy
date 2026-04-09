@@ -1,0 +1,45 @@
+.lqd-carousel-stack {
+  .carousel-items {
+    @apply relative flex flex-wrap items-center justify-center;
+
+    .carousel-item {
+      @apply relative flex items-center justify-center;
+      transition: transform 0.6s, opacity 0.6s;
+    }
+  }
+}
+
+@screen md {
+  .lqd-carousel-stack {
+    .carousel-items {
+      @apply block overflow-visible h-full w-full perspective-10;
+      perspective-origin: 50% 200%;
+
+      .carousel-item {
+        @apply absolute top-0 left-0 z-1 opacity-0 cursor-pointer visible backface-hidden transform;
+        transform: translate3d(0, 0, - 180px);
+        transform-origin: 50% -10%;
+
+        &.is-first,
+        &.is-second,
+        &.is-third {
+          opacity: 1;
+        }
+      }
+    }
+
+    .lqd-carousel-stack-nav {
+      .lqd-carousel-stack-btn {
+        @apply rounded-full text-secondary dark:text-white bg-white dark:bg-darkAccent border border-darkAccent p-3 absolute top-1/2 translate-y-1/2 z-2 shadow;
+
+        svg {
+          @apply fill-secondary dark:fill-white w-3 h-3;
+        }
+      }
+    }
+  }
+}
+
+[data-liquid-bg] .redo.bg-transparent {
+  background-color: transparent !important;
+}

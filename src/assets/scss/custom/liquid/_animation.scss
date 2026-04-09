@@ -1,0 +1,42 @@
+@keyframes btnHoverTxtLiquidY {
+  50% {
+    opacity: 0;
+    transform: translateY(.3em)
+  }
+
+  51% {
+    opacity: 0;
+    transform: translateY(-.3em)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@keyframes btnHoverTxtLiquidY {
+  50% {
+    opacity: 0;
+    transform: translateX(.3em)
+  }
+
+  51% {
+    opacity: 0;
+    transform: translateX(-.3em)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+.btn-hover-txt-liquid-y:hover .lqd-chars {
+  animation: btnHoverTxtLiquidY .6s calc(var(--chars-index, 0s) * .03s) cubic-bezier(.23, 1, .32, 1) both alternate
+}
+
+
+.btn-hover-txt-liquid-x:hover .lqd-chars {
+  animation: btnHoverTxtLiquidX .6s calc(var(--chars-index, 0s) * .03s) cubic-bezier(.23, 1, .32, 1) both alternate
+}

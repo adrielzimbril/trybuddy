@@ -1,0 +1,94 @@
+<header class="relative top-0 inset-x-0 flex items-center z-999 w-full bg-transparent transition-all py-5"
+		data-sticky-header="true"
+		data-sticky-options='{"disableOnMobile":true, "stickyTrigger":"first-section", "dynamicColors":true}'
+		data-sticky-values-measured="false"
+		id="navbar">
+	<div class="container ld:p-0">
+		<nav
+				class="relative flex items-center py-4 px-6 backdrop-filter backdrop-blur-lg dark:backdrop-blur-none bg-white/90 dark:bg-black/20s dark:bg-darkSub/100 shadow lg:shadow-lg dark:shadow-darkOut rounded-full">
+			<a href="index.html">
+				<img alt="" class="h-8 lg:h-12 inline-block dark:hidden" src="./assets/images/logo-dark.svg">
+				<img alt="" class="h-8 lg:h-12 hidden dark:inline-block" src="./assets/images/logo-light.svg">
+			</a>
+
+			<div class="hidden lg:block mx-auto">
+				<ul class="navbar-nav flex gap-x-3 items-center justify-center">
+					<li class="nav-item py-1 px-3 bg-darkSub/5 dark:bg-white/5 rounded-xl">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item py-1 px-3 bg-darkSub/5 dark:bg-white/5 rounded-xl">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					<li class="nav-item py-1 px-3 bg-darkSub/5 dark:bg-white/5 rounded-xl">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="hidden lg:flex items-center ms-3">
+				<a class="px-4 py-2 hidden" href="#">Login</a>
+
+				<a class="bg-primary px-6 py-3 rounded-full inline-flex items-center text-md text-white"
+				   href="#hero_ctn">J'éssaie Buddy Sensei</a>
+			</div>
+
+			<!-- Start Mobile Toggle -->
+			<div class="lg:hidden flex items-center ms-auto px-2.5">
+				<div class="menu-extras">
+					<div class="menu-item">
+						<a class="navbar-toggle" data-fc-target="mobileMenu" data-fc-type="offcanvas" id="isToggle"
+						   onclick="toggleMenu()" type="button">
+							<div class="lines">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- End Mobile Toggle -->
+		</nav>
+	</div>
+</header>
+
+
+<div class="fc-offcanvas-open:translate-x-0 translate-x-full fixed top-0 end-0 transition-all duration-200 transform h-full w-full max-w-md z-50 bg-white border-s hidden"
+	 id="navigation"  sid="mobileMenu">
+	<div class="flex flex-col h-full divide-y-2 divide-gray-200">
+		<div class="p-6 flex items-center justify-between">
+			<a href="index.html">
+				<img alt="" class="h-8 inline-block dark:hidden" src="./assets/images/logo-dark.svg">
+				<img alt="" class="h-8 hidden dark:inline-block" src="./assets/images/logo-light.svg">
+			</a>
+
+			<button class="flex items-center px-2" data-fc-dismiss>
+				<i class="fa-solid fa-xmark text-xl"></i>
+			</button>
+		</div>
+
+		<div class="p-6 overflow-y-scroll h-full">
+			<ul class="navbar-nav flex flex-col gap-2" data-fc-type="accordion">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">About Us</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Blog Page</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="p-6 flex items-center justify-center">
+			<a class="bg-secondary w-full p-3 rounded flex items-center justify-center text-sm mr-2 hidden"
+			   href="#"
+			   target="_blank">Log In</a>
+			<a class="bg-secondary w-full p-3 rounded flex items-center justify-center text-sm"
+			   href="#hero_ctn">J'éssaie Buddy Sensei</a>
+		</div>
+	</div>
+</div>
