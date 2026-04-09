@@ -99,15 +99,24 @@
     applyTheme(initialTheme)
     if (checkbox) checkbox.checked = initialTheme === 'dark'
 
-    const toggleTheme = (event) => {
+    const computeNextTheme = (event) => {
       event?.preventDefault?.()
       const next = html.classList.contains('dark') ? 'light' : 'dark'
       applyTheme(next)
       if (checkbox) checkbox.checked = next === 'dark'
+      return next
     }
 
-    themeToggle?.addEventListener('click', toggleTheme)
-    checkbox?.addEventListener('change', toggleTheme)
+    if (themeToggle) {
+      themeToggle.addEventListener('click', (event) => {
+        computeNextTheme(event)
+      })
+    }
+    if (checkbox) {
+      checkbox.addEventListener('change', (event) => {
+        computeNextTheme(event)
+      })
+    }
   }
 
   function init() {
